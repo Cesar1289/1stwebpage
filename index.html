@@ -3,9 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cesar Espitia</title>
+  <title>Cesar Espitia - Home</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f5f5f5;
+    }
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 { font-size: 2.5rem; }
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .slot {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .slot:nth-child(even) { flex-direction: row-reverse; }
+    .slot img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #ddd;
+    }
+    .slot .text { padding: 1.5rem; }
+    .slot .text h2 { margin-bottom: 0.5rem; }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .slot, .slot:nth-child(even) { flex-direction: column; }
+      .slot img { width: 100%; height: 200px; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Cesar Espitia</h1>
+  <header>
+    <h1>Cesar Espitia</h1>
+  </header>
+
+  <main>
+    <!--
+      ============================================================
+      EDITABLE SLOTS
+      ------------------------------------------------------------
+      Each slot below is a picture + text block. To customize:
+        1. Replace the src="..." with your image path or URL.
+        2. Replace the <h2> title and <p> description with your text.
+      Upload images to the repo and reference them like src="images/photo1.jpg",
+      or use any web URL like src="https://example.com/photo.jpg".
+      ============================================================
+    -->
+
+    <!-- SLOT 1 -->
+    <div class="slot">
+      <img src="https://via.placeholder.com/220/1a1a2e/ffffff?text=Slot+1" alt="Slot 1 image">
+      <div class="text">
+        <h2>Slot 1 Title</h2>
+        <p>Slot 1 description text goes here. Replace this with your own content.</p>
+      </div>
+    </div>
+
+    <!-- SLOT 2 -->
+    <div class="slot">
+      <img src="https://via.placeholder.com/220/16213e/ffffff?text=Slot+2" alt="Slot 2 image">
+      <div class="text">
+        <h2>Slot 2 Title</h2>
+        <p>Slot 2 description text goes here. Replace this with your own content.</p>
+      </div>
+    </div>
+
+    <!-- SLOT 3 -->
+    <div class="slot">
+      <img src="https://via.placeholder.com/220/0f3460/ffffff?text=Slot+3" alt="Slot 3 image">
+      <div class="text">
+        <h2>Slot 3 Title</h2>
+        <p>Slot 3 description text goes here. Replace this with your own content.</p>
+      </div>
+    </div>
+
+    <!-- SLOT 4 -->
+    <div class="slot">
+      <img src="https://via.placeholder.com/220/533483/ffffff?text=Slot+4" alt="Slot 4 image">
+      <div class="text">
+        <h2>Slot 4 Title</h2>
+        <p>Slot 4 description text goes here. Replace this with your own content.</p>
+      </div>
+    </div>
+
+    <!-- SLOT 5 -->
+    <div class="slot">
+      <img src="https://via.placeholder.com/220/e94560/ffffff?text=Slot+5" alt="Slot 5 image">
+      <div class="text">
+        <h2>Slot 5 Title</h2>
+        <p>Slot 5 description text goes here. Replace this with your own content.</p>
+      </div>
+    </div>
+
+    <!-- SLOT 6 -->
+    <div class="slot">
+      <img src="https://via.placeholder.com/220/222831/ffffff?text=Slot+6" alt="Slot 6 image">
+      <div class="text">
+        <h2>Slot 6 Title</h2>
+        <p>Slot 6 description text goes here. Replace this with your own content.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Cesar Espitia
+  </footer>
 </body>
 </html>
