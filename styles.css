@@ -13,12 +13,14 @@
 /* ---------- Design tokens ---------- */
 :root {
   /* Colors */
-  --color-bg: #a8282f;        /* Page background (all pages) */
+  --color-bg: #2b2b2b;        /* Page background (all pages) — blackish gray */
   --color-surface: #ffffff;   /* Card / surface background */
   --color-text: #222222;      /* Primary text */
   --color-text-muted: #777777;/* Secondary text */
   --color-header: #1a1a2e;    /* Header band */
   --color-accent: #e94560;    /* Accent */
+  --color-h1: #ffffff;         /* Heading 1 text color (white) */
+  --color-birthday: #ffd700;  /* Birthday line text color (gold) */
 
   /* Typography */
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -91,6 +93,14 @@ header {
 
 header h1 {
   font-size: 2.5rem;
+  color: var(--color-h1); /* White */
+}
+
+/* Birthday line directly under the h1 */
+header .birthday {
+  color: var(--color-birthday);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
 }
 
 main {
